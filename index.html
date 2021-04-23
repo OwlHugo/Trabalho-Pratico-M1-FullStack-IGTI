@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Importação do Tailwind CSS -->
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Treinando JS</title>
+  </head>
+  <body>
+    <div class="container mx-auto p-4">
+      <h1 class="text-center font-semibold text-2xl">
+        Treinando JS
+      </h1>
+
+      <label class="flex flex-col m-4 text-xl">
+        <span>Escolha um número entre 0 e 999:</span>
+        <input
+          id="inputRange"
+          type="range"
+          min="0"
+          max="999"
+          step="1"
+          value="0"
+        />
+      </label>
+
+      <label class="flex flex-col m-4 text-xl">
+        <span>Número atual:</span>
+        <input id="inputValue" type="text" value="0" readonly disabled />
+      </label>
+
+      <label class="flex flex-col m-4 text-xl">
+        <span>Número por extenso:</span>
+        <input id="inputText" type="text" value="zero" readonly disabled />
+      </label>
+    </div>
+
+    <script defer src="./js/script.js"></script>
+  </body>
+</html>
